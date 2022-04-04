@@ -1,13 +1,83 @@
-body {
+*,
+::before,
+::after {
+  padding:0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --ff-primary: 'Inter', sans-serif;
+  --fw-regular: 400;
+  --fw-medium:500;
+  --fw-semi:600;
+  --fw-bold:700;
+  --clr-primary:#293264;
+  --clr-background:#F5F7FB;
+}
+
+body{
+  font-family: var(--ff-primary);
+  background-color: var(--clr-background);
+}
+
+.start__screen{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+main{
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  
+}
+.blue__bloob{
+  
+position: absolute;
+ top: 60%;
+ left: -20%;
+  
+  
+}
+.yellow__bloob{
+  position: relative;
+  top: -20%;
+  left: 50%;
+ 
+
+}
+/* MEDIA QUERIES FOR RESPONIVE DESIGN */
+@media(min-width:800px){
+  .blue__bloob{
+    top: 20%;
+    left: -80%;
+  }
+  .yellow__bloob{
+    top: -60%;
+    left: 50%;
+}
+}
+@media(min-width:1200px){
+  .blue__bloob{
+    top: 10%;
+    left: -80%;
+  }
+  .yellow__bloob{
+    top: -80%;
+    left: 60%;
+}
+}
+@media(min-width:1600px){
+  .blue__bloob{
+    top: -20%;
+    left: -80%;
+  }
+  .yellow__bloob{
+    top: -120%;
+    left: 60%;
+}
 }
