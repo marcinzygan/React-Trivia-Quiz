@@ -10,10 +10,10 @@ export default function StartScreen(){
             <path fill="#FFFAD1" d="M30.5,-22.9C44.4,-16.6,63.9,-8.3,68.5,4.6C73,17.5,62.7,34.9,48.8,48.8C34.9,62.7,17.5,73,-0.5,73.5C-18.4,73.9,-36.8,64.6,-44.8,50.7C-52.9,36.8,-50.6,18.4,-46.3,4.3C-42,-9.7,-35.6,-19.5,-27.5,-25.7C-19.5,-31.9,-9.7,-34.7,-0.7,-34C8.3,-33.3,16.6,-29.1,30.5,-22.9Z" transform="translate(100 100)" />
           </svg>  
         <div className="start__screen"> 
-            <h1>Quizzical</h1>
-            <h3>Some description if needed</h3>
+            <h1 className="start__h1">Quizzical</h1>
+            <h3 className="start__h3">Test your knowledge from different topics.</h3>
             <NavLink to="/questions">
-            <button className="btn_start">Start</button>
+            <button className="btn__start">Start quiz</button>
             </NavLink>
         </div>
         </main>
