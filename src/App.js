@@ -11,7 +11,7 @@ export default function App(){
     
       <div>
         <Routes>
-          <Route path="/start" element={<StartScreen/>}/>
+          <Route path="/" element={<StartScreen/>}/>
           <Route path="/questions" element={<Questions/>}/>
         </Routes>
         

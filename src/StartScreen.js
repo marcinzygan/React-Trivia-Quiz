@@ -13,7 +13,7 @@ export default function StartScreen(){
             <h1 className="start__h1">Quizzical</h1>
             <h3 className="start__h3">Test your knowledge from different topics.</h3>
             <NavLink to="/questions">
-            <button className="btn__start">Start quiz</button>
+            <button className="btn">Start quiz</button>
             </NavLink>
         </div>
         </main>
